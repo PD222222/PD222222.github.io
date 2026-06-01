@@ -1,0 +1,254 @@
+/* div {
+    border: red 1px solid;
+} */
+
+* {
+    font-family: helvetica;
+}
+
+h2 {
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: lightgrey;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 50px;
+    position:fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    border-bottom: darkgray solid 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main {
+    margin-top:50px;
+}
+
+h1 {
+    margin:auto;
+    flex:2;
+}
+
+nav {
+    flex:5;
+    display: flex;
+    gap:10px;
+}
+
+nav a {
+    text-decoration: none;
+    border-radius: 2px;
+    border:black 1px solid;
+    padding:5px;
+    background-color: darkgrey;
+    color:black
+}
+nav a:hover{
+    background-color: white;
+    transition: background-color 400ms;
+}
+
+hr {
+    scroll-margin-top: 50px;
+}
+
+.styled-table thead th {
+    font-style: bold;
+    background-color: darkslateblue;
+    color: white;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 2px 6px;
+    border: black 1px solid;
+}
+
+.styled-table {
+    border-collapse: collapse;
+}
+
+.styled-table td.mid-cell {
+    text-align: center;
+}
+
+.styled-table tbody tr:nth-child(odd) {
+    background-color: powderblue;
+}
+
+.styled-table tbody tr.highlight {
+    background-color: yellow;
+    /* font-weight: bold; */
+    text-shadow: 0 0 1px currentColor, 0 0 1px currentColor; /* Simulate bold without changing sizing */
+}
+
+.Overall {
+    background-color: black !important;
+    color: white !important;
+}
+
+.styled-table .missed-one {
+    border-top: dashed 2px black;
+}
+
+.green {
+    color: black;
+    background-color: #7fff7f;
+}
+
+.red {
+    color: black;
+    background-color: #ff7f7f;
+}
+
+.big-green {
+    background-color: #00FF00;
+    color: black;
+    font-weight: bold;
+}
+
+.big-red {
+    background-color: #Ff0000;
+    color: white;
+    font-weight: bold;
+}
+
+.divisor {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.column {
+    position: sticky;
+    top:0px;
+}
+
+.individual-parks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* two equal-width columns */
+    gap: 10px;
+    /* optional spacing between columns */
+}
+
+.styled-table td.overall-col {
+    border-left: black 2px solid;
+    border-right: black 2px solid;
+}
+
+.styled-table tr.overall-row td {
+    border-bottom: black 2px solid;
+}
+
+#runWindow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  /* transition: width 0.3s ease; */
+  z-index: 1000;
+  pointer-events: none;
+}
+
+#runWindow.active {
+  width: 100%;
+  pointer-events: auto;
+}
+
+#runWindow-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  padding: 30px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+}
+
+dl dt {
+    font-weight: bold;
+}
+dl dt::after {
+    content: ":";
+}
+dl dd {
+    margin-left: 2px;
+}
+
+.milestones {
+    /* margin-top: 10px; */
+    min-width: 400px;
+}
+
+.progress-container {
+    margin-bottom: 5px;
+}
+
+.progress-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* spacing between bar and percentage */
+}
+
+.progress-wrapper progress {
+    flex: 1;
+    height: 20px; /* optional: to make progress bar more visible */
+}
+
+.progress-label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-label-container p {
+    margin:0px;
+}
+
+.percentage {
+    min-width: 40px;
+    text-align: right;
+    font-weight: bold;
+}
+
+progress {
+    appearance: none;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--progress-color, #4caf50);
+    border-radius: 5px;
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+    background-color: var(--progress-color, #4caf50);
+}
+
+/* challenges */
+.challenge-title {
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.challenge-desc {
+    margin:0px;
+    font-style: italic;
+}
