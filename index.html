@@ -14,6 +14,7 @@
         <h1>My Parkrun Dashboard</h1>
         <nav>
             <a href="#runs">Runs</a>
+            <a href="#stats">Stats</a>
             <a href="#achievements">Achievements</a>
             <a href="#graphs">Graphs</a>
         </nav>
@@ -243,8 +244,12 @@
                                         </div>
 
             </div>
-            <div class="park-stats column">
 
+        </div>
+        <hr id="stats">
+        <h2>Assorted Stats</h2>
+        <div class="divisor">
+            <div class="stats-1 column">
                 <table class="styled-table">
                     <thead>
                         <tr>
@@ -261,18 +266,6 @@
                             <td class="Overall">Overall</td>
                             <td>22/02/2025</td><td>30/05/2026</td><td>64</td><td>26:36</td><td>303.67</td>                        </tr>
                         <tr><td class='Wammy'>Wammy</td><td>22/02/2025</td><td>30/05/2026</td><td>44</td><td>26:30</td><td>338.91</td></tr><tr><td class='Hanley'>Hanley</td><td>05/04/2025</td><td>04/04/2026</td><td>3</td><td>26:03</td><td>153.00</td></tr><tr><td class='Ruthin'>Ruthin</td><td>12/04/2025</td><td>13/09/2025</td><td>13</td><td>26:33</td><td>99.62</td></tr><tr><td class='Trentham'>Trentham</td><td>24/05/2025</td><td>08/11/2025</td><td>3</td><td>28:28</td><td>852.33</td></tr><tr><td class='Woodbank'>Woodbank</td><td>09/08/2025</td><td>09/08/2025</td><td>1</td><td>28:01</td><td>212.00</td></tr>                    </tbody>
-                </table>
-                <br>
-                <table class="styled-table" id="range-table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Range</th>
-                            <th class="Overall" scope="col">Overall</th>
-                            <th class='Wammy'>Wammy</th><th class='Hanley'>Hanley</th><th class='Ruthin'>Ruthin</th><th class='Trentham'>Trentham</th><th class='Woodbank'>Woodbank</th>                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr><td>24 &le; t < 25</td><td class='overall-col range-cell'>2</td><td class='range-cell'>2</td><td class='range-cell'></td><td class='range-cell'></td><td class='range-cell'></td><td class='range-cell'></td></tr><tr><td>25 &le; t < 26</td><td class='overall-col range-cell'>19</td><td class='range-cell'>14</td><td class='range-cell'>2</td><td class='range-cell'>3</td><td class='range-cell'></td><td class='range-cell'></td></tr><tr><td>26 &le; t < 27</td><td class='overall-col range-cell'>20</td><td class='range-cell'>15</td><td class='range-cell'></td><td class='range-cell'>4</td><td class='range-cell'>1</td><td class='range-cell'></td></tr><tr><td>27 &le; t < 28</td><td class='overall-col range-cell'>15</td><td class='range-cell'>9</td><td class='range-cell'>1</td><td class='range-cell'>5</td><td class='range-cell'></td><td class='range-cell'></td></tr><tr><td>28 &le; t < 29</td><td class='overall-col range-cell'>6</td><td class='range-cell'>3</td><td class='range-cell'></td><td class='range-cell'>1</td><td class='range-cell'>1</td><td class='range-cell'>1</td></tr><tr><td>29 &le; t < 30</td><td class='overall-col range-cell'>1</td><td class='range-cell'></td><td class='range-cell'></td><td class='range-cell'></td><td class='range-cell'>1</td><td class='range-cell'></td></tr><tr><td>30 &le; t < 31</td><td class='overall-col range-cell'>1</td><td class='range-cell'>1</td><td class='range-cell'></td><td class='range-cell'></td><td class='range-cell'></td><td class='range-cell'></td></tr>                    </tbody>
                 </table>
                 <br>
                 <table class="styled-table" id="streak-table">
@@ -292,6 +285,19 @@
                             <td>Current</td>
                             <td>20</td><td>17/01/2026</td><td>30/05/2026</td>                        </tr>
                     </tbody>
+                </table>
+            </div>
+            <div class="stats-2">
+                <table class="styled-table" id="range-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Range</th>
+                            <th class="Overall" scope="col">Overall</th>
+                            <th class='Wammy'>Wammy</th><th class='Hanley'>Hanley</th><th class='Ruthin'>Ruthin</th><th class='Trentham'>Trentham</th><th class='Woodbank'>Woodbank</th>                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr><td>24 &le; t < 25</td><td class='overall-col range-cell'>2</td><td class='range-cell park-col'>2</td><td class='range-cell park-col'></td><td class='range-cell park-col'></td><td class='range-cell park-col'></td><td class='range-cell park-col'></td></tr><tr><td>25 &le; t < 26</td><td class='overall-col range-cell'>19</td><td class='range-cell park-col'>14</td><td class='range-cell park-col'>2</td><td class='range-cell park-col'>3</td><td class='range-cell park-col'></td><td class='range-cell park-col'></td></tr><tr><td>26 &le; t < 27</td><td class='overall-col range-cell'>20</td><td class='range-cell park-col'>15</td><td class='range-cell park-col'></td><td class='range-cell park-col'>4</td><td class='range-cell park-col'>1</td><td class='range-cell park-col'></td></tr><tr><td>27 &le; t < 28</td><td class='overall-col range-cell'>15</td><td class='range-cell park-col'>9</td><td class='range-cell park-col'>1</td><td class='range-cell park-col'>5</td><td class='range-cell park-col'></td><td class='range-cell park-col'></td></tr><tr><td>28 &le; t < 29</td><td class='overall-col range-cell'>6</td><td class='range-cell park-col'>3</td><td class='range-cell park-col'></td><td class='range-cell park-col'>1</td><td class='range-cell park-col'>1</td><td class='range-cell park-col'>1</td></tr><tr><td>29 &le; t < 30</td><td class='overall-col range-cell'>1</td><td class='range-cell park-col'></td><td class='range-cell park-col'></td><td class='range-cell park-col'></td><td class='range-cell park-col'>1</td><td class='range-cell park-col'></td></tr><tr><td>30 &le; t < 31</td><td class='overall-col range-cell'>1</td><td class='range-cell park-col'>1</td><td class='range-cell park-col'></td><td class='range-cell park-col'></td><td class='range-cell park-col'></td><td class='range-cell park-col'></td></tr>                    </tbody>
                 </table>
             </div>
         </div>
@@ -460,7 +466,7 @@
                         2880, 2940, 3000, 3060, 3120, 3180, 3240, 3300, 3360, 3420, 3480, 3540
                     ];
 
-                    var backgrounds = [{"park":"Wammy","x0":"2025-02-18","x1":"2025-04-01","color":"#2a781d"},{"park":"Hanley","x0":"2025-04-01","x1":"2025-04-08","color":"#f50cd2"},{"park":"Ruthin","x0":"2025-04-08","x1":"2025-04-15","color":"#0ce1f5"},{"park":"Wammy","x0":"2025-04-15","x1":"2025-05-20","color":"#2a781d"},{"park":"Trentham","x0":"2025-05-20","x1":"2025-05-27","color":"#f5a70c"},{"park":"Wammy","x0":"2025-05-27","x1":"2025-06-10","color":"#2a781d"},{"park":"Ruthin","x0":"2025-06-17","x1":"2025-08-05","color":"#0ce1f5"},{"park":"Woodbank","x0":"2025-08-05","x1":"2025-08-12","color":"#6d0cf5"},{"park":"Ruthin","x0":"2025-08-12","x1":"2025-09-16","color":"#0ce1f5"},{"park":"Wammy","x0":"2025-09-23","x1":"2025-09-30","color":"#2a781d"},{"park":"Wammy","x0":"2025-10-07","x1":"2025-10-14","color":"#2a781d"},{"park":"Trentham","x0":"2025-10-14","x1":"2025-10-21","color":"#f5a70c"},{"park":"Wammy","x0":"2025-10-21","x1":"2025-11-04","color":"#2a781d"},{"park":"Trentham","x0":"2025-11-04","x1":"2025-11-11","color":"#f5a70c"},{"park":"Wammy","x0":"2025-11-11","x1":"2026-01-04","color":"#2a781d"},{"park":"Wammy","x0":"2026-01-13","x1":"2026-03-03","color":"#2a781d"},{"park":"Hanley","x0":"2026-03-03","x1":"2026-03-10","color":"#f50cd2"},{"park":"Wammy","x0":"2026-03-10","x1":"2026-03-31","color":"#2a781d"},{"park":"Hanley","x0":"2026-03-31","x1":"2026-04-07","color":"#f50cd2"},{"park":"Wammy","x0":"2026-04-07","x1":"2026-06-02","color":"#2a781d"}];
+                    var backgrounds = [{"park":"Wammy","x0":"2025-02-19","x1":"2025-04-02","color":"#2a781d"},{"park":"Hanley","x0":"2025-04-02","x1":"2025-04-09","color":"#f50cd2"},{"park":"Ruthin","x0":"2025-04-09","x1":"2025-04-16","color":"#0ce1f5"},{"park":"Wammy","x0":"2025-04-16","x1":"2025-05-21","color":"#2a781d"},{"park":"Trentham","x0":"2025-05-21","x1":"2025-05-28","color":"#f5a70c"},{"park":"Wammy","x0":"2025-05-28","x1":"2025-06-11","color":"#2a781d"},{"park":"Ruthin","x0":"2025-06-18","x1":"2025-08-06","color":"#0ce1f5"},{"park":"Woodbank","x0":"2025-08-06","x1":"2025-08-13","color":"#6d0cf5"},{"park":"Ruthin","x0":"2025-08-13","x1":"2025-09-17","color":"#0ce1f5"},{"park":"Wammy","x0":"2025-09-24","x1":"2025-10-01","color":"#2a781d"},{"park":"Wammy","x0":"2025-10-08","x1":"2025-10-15","color":"#2a781d"},{"park":"Trentham","x0":"2025-10-15","x1":"2025-10-22","color":"#f5a70c"},{"park":"Wammy","x0":"2025-10-22","x1":"2025-11-05","color":"#2a781d"},{"park":"Trentham","x0":"2025-11-05","x1":"2025-11-12","color":"#f5a70c"},{"park":"Wammy","x0":"2025-11-12","x1":"2026-01-05","color":"#2a781d"},{"park":"Wammy","x0":"2026-01-14","x1":"2026-03-04","color":"#2a781d"},{"park":"Hanley","x0":"2026-03-04","x1":"2026-03-11","color":"#f50cd2"},{"park":"Wammy","x0":"2026-03-11","x1":"2026-04-01","color":"#2a781d"},{"park":"Hanley","x0":"2026-04-01","x1":"2026-04-08","color":"#f50cd2"},{"park":"Wammy","x0":"2026-04-08","x1":"2026-06-03","color":"#2a781d"}];
 
                     // Generate shape backgrounds
                     var parkShapes = backgrounds.map(bg => ({
@@ -571,7 +577,7 @@
                         2880, 2940, 3000, 3060, 3120, 3180, 3240, 3300, 3360, 3420, 3480, 3540
                     ];
 
-                    var backgrounds = [{"park":"Wammy","x0":"2025-02-18","x1":"2025-04-01","color":"#2a781d"},{"park":"Wammy","x0":"2025-04-15","x1":"2025-05-20","color":"#2a781d"},{"park":"Wammy","x0":"2025-05-27","x1":"2025-06-10","color":"#2a781d"},{"park":"Wammy","x0":"2025-09-23","x1":"2025-09-30","color":"#2a781d"},{"park":"Wammy","x0":"2025-10-07","x1":"2025-10-14","color":"#2a781d"},{"park":"Wammy","x0":"2025-10-21","x1":"2025-11-04","color":"#2a781d"},{"park":"Wammy","x0":"2025-11-11","x1":"2026-01-04","color":"#2a781d"},{"park":"Wammy","x0":"2026-01-13","x1":"2026-03-03","color":"#2a781d"},{"park":"Wammy","x0":"2026-03-10","x1":"2026-03-31","color":"#2a781d"},{"park":"Wammy","x0":"2026-04-07","x1":"2026-06-02","color":"#2a781d"}];
+                    var backgrounds = [{"park":"Wammy","x0":"2025-02-19","x1":"2025-04-02","color":"#2a781d"},{"park":"Wammy","x0":"2025-04-16","x1":"2025-05-21","color":"#2a781d"},{"park":"Wammy","x0":"2025-05-28","x1":"2025-06-11","color":"#2a781d"},{"park":"Wammy","x0":"2025-09-24","x1":"2025-10-01","color":"#2a781d"},{"park":"Wammy","x0":"2025-10-08","x1":"2025-10-15","color":"#2a781d"},{"park":"Wammy","x0":"2025-10-22","x1":"2025-11-05","color":"#2a781d"},{"park":"Wammy","x0":"2025-11-12","x1":"2026-01-05","color":"#2a781d"},{"park":"Wammy","x0":"2026-01-14","x1":"2026-03-04","color":"#2a781d"},{"park":"Wammy","x0":"2026-03-11","x1":"2026-04-01","color":"#2a781d"},{"park":"Wammy","x0":"2026-04-08","x1":"2026-06-03","color":"#2a781d"}];
 
                     // Generate shape backgrounds
                     var parkShapes = backgrounds.map(bg => ({
@@ -682,7 +688,7 @@
                         2880, 2940, 3000, 3060, 3120, 3180, 3240, 3300, 3360, 3420, 3480, 3540
                     ];
 
-                    var backgrounds = [{"park":"Hanley","x0":"2025-04-01","x1":"2025-04-08","color":"#f50cd2"},{"park":"Hanley","x0":"2026-03-03","x1":"2026-03-10","color":"#f50cd2"},{"park":"Hanley","x0":"2026-03-31","x1":"2026-04-07","color":"#f50cd2"}];
+                    var backgrounds = [{"park":"Hanley","x0":"2025-04-02","x1":"2025-04-09","color":"#f50cd2"},{"park":"Hanley","x0":"2026-03-04","x1":"2026-03-11","color":"#f50cd2"},{"park":"Hanley","x0":"2026-04-01","x1":"2026-04-08","color":"#f50cd2"}];
 
                     // Generate shape backgrounds
                     var parkShapes = backgrounds.map(bg => ({
@@ -793,7 +799,7 @@
                         2880, 2940, 3000, 3060, 3120, 3180, 3240, 3300, 3360, 3420, 3480, 3540
                     ];
 
-                    var backgrounds = [{"park":"Ruthin","x0":"2025-04-08","x1":"2025-04-15","color":"#0ce1f5"},{"park":"Ruthin","x0":"2025-06-17","x1":"2025-08-05","color":"#0ce1f5"},{"park":"Ruthin","x0":"2025-08-12","x1":"2025-09-16","color":"#0ce1f5"}];
+                    var backgrounds = [{"park":"Ruthin","x0":"2025-04-09","x1":"2025-04-16","color":"#0ce1f5"},{"park":"Ruthin","x0":"2025-06-18","x1":"2025-08-06","color":"#0ce1f5"},{"park":"Ruthin","x0":"2025-08-13","x1":"2025-09-17","color":"#0ce1f5"}];
 
                     // Generate shape backgrounds
                     var parkShapes = backgrounds.map(bg => ({
@@ -904,7 +910,7 @@
                         2880, 2940, 3000, 3060, 3120, 3180, 3240, 3300, 3360, 3420, 3480, 3540
                     ];
 
-                    var backgrounds = [{"park":"Trentham","x0":"2025-05-20","x1":"2025-05-27","color":"#f5a70c"},{"park":"Trentham","x0":"2025-10-14","x1":"2025-10-21","color":"#f5a70c"},{"park":"Trentham","x0":"2025-11-04","x1":"2025-11-11","color":"#f5a70c"}];
+                    var backgrounds = [{"park":"Trentham","x0":"2025-05-21","x1":"2025-05-28","color":"#f5a70c"},{"park":"Trentham","x0":"2025-10-15","x1":"2025-10-22","color":"#f5a70c"},{"park":"Trentham","x0":"2025-11-05","x1":"2025-11-12","color":"#f5a70c"}];
 
                     // Generate shape backgrounds
                     var parkShapes = backgrounds.map(bg => ({
@@ -1001,10 +1007,15 @@
         });
     });
 
-    const rangeTableMaxRunCount = 20;
+    const rangeTableMaxRunCountOverall = 20;
+    const rangeTableMaxRunCountParks = 15;
 
-    document.querySelectorAll('.range-cell').forEach(element => {
-        const colPart = 255 - (element.textContent / rangeTableMaxRunCount) * 255;
+    document.querySelectorAll('.range-cell.overall-col').forEach(element => {
+        var colPart = 255 - (element.textContent / rangeTableMaxRunCountOverall) * 255;
+        element.style.backgroundColor = `rgb(${colPart}, 255, ${colPart})`;
+    });
+    document.querySelectorAll('.range-cell.park-col').forEach(element => {
+        var colPart = 255 - (element.textContent / rangeTableMaxRunCountParks) * 255;
         element.style.backgroundColor = `rgb(${colPart}, 255, ${colPart})`;
     });
 
@@ -1024,11 +1035,8 @@
         document.getElementById('run-overall-pb-diff').textContent = `${runData['overall_diff_pb']} off overall PB`;
         document.getElementById('run-parkly-pb-diff').textContent = `${runData['park_diff_pb']} off PB for this park.`;
     }
-    function hideRunWindow() {
-        document.getElementById('runWindow').classList.remove('active');
-    }
 
-    // Optional: close when clicking outside the content
+    // close when clicking outside the content
     document.getElementById('runWindow').addEventListener('click', (e) => {
         if (e.target.id === 'runWindow') {
             document.getElementById('runWindow').classList.remove('active');

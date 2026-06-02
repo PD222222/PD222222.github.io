@@ -43,7 +43,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 5px;
     border:black 1px solid;
     padding:5px;
     background-color: darkgrey;
@@ -127,7 +127,7 @@ hr {
 
 .column {
     position: sticky;
-    top:0px;
+    top:50px;
 }
 
 .individual-parks {
