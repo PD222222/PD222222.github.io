@@ -130,6 +130,20 @@ hr {
     top:50px;
 }
 
+.hints-box {
+    border: 1px solid rgb(205, 205, 205);
+    box-shadow: 3px 3px rgb(194, 194, 194, 0.5);
+    padding: 10px;
+    max-width: 20%;
+}
+
+.hints-box h3 {
+    margin-top: 5px;
+}
+.hints-box li {
+    margin-bottom: 5px;
+}
+
 .individual-parks {
     display: grid;
     grid-template-columns: 1fr 1fr;
